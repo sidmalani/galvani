@@ -7,7 +7,6 @@ on:
   push:
     branches:
       - master
-      - fix-additional-fields
 
 concurrency:
   # cancels running checks on new pushes
