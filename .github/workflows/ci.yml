@@ -26,11 +26,11 @@ jobs:
         python-version: ['3.8', '3.9', '3.10', '3.11']
 
     steps:
-      - name: Cached LFS checkout
-        uses: nschloe/action-cached-lfs-checkout@v1.2.2
-        with:
-          fetch-depth: 0
-          enableCrossOsArchive: true
+      # - name: Cached LFS checkout
+      #   uses: nschloe/action-cached-lfs-checkout@v1.2.2
+      #   with:
+      #     fetch-depth: 0
+      #     enableCrossOsArchive: true
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
